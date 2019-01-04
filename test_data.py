@@ -2,7 +2,7 @@
 FS001 = ["/", "d",
          ["studio", "d", ["zero.py", "f"], ["thakur.jpg", "f"]],
          ["home", "d",
-          ["psychology", "d", ["trauma", "d", ["pills.py"], ["coffee.jpg"]], ["versus.py", "f"],
+          ["psychology", "d", ["trauma", "d", ["pills.py","f"], ["coffee.jpg","f"]], ["versus.py", "f"],
            ["crazy", "d", ["stars.jpg", "f"], ["custody.avi", "f"]]],
           ["street", "d", ["ritman.py", "f"], ["future.txt", "f"]]]]
 C001 = ["cd home/psychology/",
