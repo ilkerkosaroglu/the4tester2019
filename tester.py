@@ -9,8 +9,6 @@ def prettify(Tree, space=0, prt=True):
         print '\033[93m' + Tree[1].lower() + '\033[0m', "*", " " * space * 3, Tree[0]
     if not Tree:
         return space
-    if prt:
-        time.sleep(0.01)
     for node in Tree[2:]:
         prettify(node, space + 1, prt)
 
@@ -24,7 +22,7 @@ while test_no < 26:
     if check_commands(vars()[test_fs], vars()[test_c]) != vars()[test_r]:
         print "-" * 30 + "%03d" % test_no + "-" * 30
         print '\033[93m' + test_fs + " >" + '\033[0m'
-        print prettify(vars()[test_fs])
+        prettify(vars()[test_fs])
         print '\033[93m' + test_c + " >" + '\033[0m', vars()[test_c][0]
         for x in vars()[test_c][1:]:
             print " " * 7 + x
